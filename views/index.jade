@@ -2,4 +2,7 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  if sessionHasExpired
+    p Session Expired
+  else
+    p Session is still good #{sessionTime}
