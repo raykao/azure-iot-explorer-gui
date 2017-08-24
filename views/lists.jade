@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1= title
+
+  table
+    thead
+        tr
+            th Device ID
+            th generationId
+
+    tbody
+        each device in devices
+            tr
+                td= device.deviceId
+                td= device.generationId
+                    
